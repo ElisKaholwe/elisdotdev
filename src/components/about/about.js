@@ -12,6 +12,7 @@ const AboutPage = () => {
           Back in 2020, I started learning programming during the COVID-19 lockdown.Having a foundation in ICT Studies from
           secondary school and knowing what I wanted, I dived headfirst into learning the
           <Link href={web} className={`${styles.special}`}>
+            {' '}
             web
           </Link>{' '}
           I began with{' '}
