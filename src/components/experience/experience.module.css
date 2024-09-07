@@ -1,0 +1,109 @@
+.card {
+  @apply mb-8 lg:mb-5 md:mb-5 w-full grid grid-cols-12 rounded-[0.25em] lg:py-2 lg:px-2;
+}
+
+.timeline {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.duration {
+  grid-column: span 12;
+  @apply text-[14px] font-semibold tracking-wide uppercase text-theme-off-white;
+}
+
+.details {
+  grid-column: span 12;
+  @apply flex flex-col;
+}
+
+.professionTitle {
+  grid-column: span 12;
+  @apply leading-[1.25em] font-[500] text-theme-white;
+}
+
+.professionLocation {
+  grid-column: span 12;
+  cursor: pointer;
+}
+
+.professionDescription {
+  grid-column: span 12;
+  @apply text-theme-off-white mt-2 text-[15px] leading-[1.5em];
+}
+
+.buttonList {
+  @apply flex flex-wrap gap-[10px] mt-[.625em] mb-4;
+}
+
+.buttonItem {
+  @apply flex gap-[2px] mb-[6px] items-center text-theme-orange leading-[1.25rem] font-[500] text-[.75rem] lg:text-[15px] lg:font-[400];
+}
+
+/* Media Queries for Experience Card Component on Medium & Large Screens */
+@media (min-width: 1024px) {
+  .timeline {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .details {
+    grid-column: span 9;
+    @apply flex flex-col;
+  }
+  .duration {
+    @apply text-theme-black-gray text-[14px];
+  }
+  .card {
+    @apply pt-5;
+  }
+  .card:hover {
+    @apply pt-5;
+  }
+  .card {
+    @apply mb-8 lg:mb-5 md:mb-5 w-full grid grid-cols-12 rounded-[0.25em] lg:py-2 lg:px-2 md:px-5 md:py-5;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light border for normal state */
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  .card:hover {
+    background: rgb(16, 32, 68, 0.1); /* Slightly more opaque on hover */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Shadow for 3D effect */
+    @apply shadow-lg md:px-5 md:py-5 lg:py-3 lg:px-5; /* Optional: add shadow for depth */
+  }
+
+  @media (min-width: 640px) {
+    .timeline {
+      grid-column: span 3;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .details {
+      grid-column: span 9;
+      @apply flex flex-col;
+    }
+    .duration {
+      @apply text-theme-black-gray text-[14px];
+    }
+    .card {
+      @apply pt-5;
+    }
+    .card:hover {
+      @apply pt-5;
+    }
+    .card {
+      @apply mb-8 lg:mb-5 md:mb-5 w-full grid grid-cols-12 rounded-[0.25em] lg:py-3 lg:px-5 md:px-5 md:py-5;
+      background: transparent; /* Semi-transparent background */
+      backdrop-filter: blur(10px); /* Blur effect */
+      border: 1px solid #1f2a44; /* Light border for normal state */
+      transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+    .card:hover {
+      background: rgb(16, 32, 68, 0.1); /* Slightly more opaque on hover */
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Shadow for 3D effect */
+      @apply shadow-lg md:px-5 md:py-5 lg:py-3 lg:px-5; /* Optional: add shadow for depth */
+    }
+  }
+}

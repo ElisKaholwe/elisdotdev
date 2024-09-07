@@ -1,0 +1,12 @@
+.paragraph {
+  @apply mb-[1rem] text-[16px] leading-relaxed text-theme-off-white;
+}
+.paragraph::selection {
+  @apply bg-lime-500 text-white;
+}
+.special {
+  @apply font-[600] text-theme-orange;
+}
+.special::selection {
+  @apply bg-rose-600 text-white;
+}

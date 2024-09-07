@@ -1,0 +1,163 @@
+/* @@@App Wrapper */
+.mainwrapper {
+  @apply min-h-screen w-full md:px-[30px];
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* @Navigation Section Container */
+.navigationwrapper {
+  @apply w-full min-h-fit col-span-12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* @Navigation Bar */
+.navigationbar {
+  grid-column: 1 / 13;
+  @apply mb-8 py-4 lg:col-start-2 lg:col-end-12 px-[20px] lg:px-0;
+}
+
+/* @Social Links Icons */
+.sociallinks {
+  @apply flex gap-[1em] mb-8;
+}
+
+/* @Icons for Social Links */
+.icon {
+  @apply w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem] leading-[1rem] text-theme-gray mt-[1em];
+}
+
+/* @Profession */
+.profession {
+  @apply inline text-[20px]  text-theme-white font-[500] leading-[28px] -tracking-[0.5];
+}
+
+/* @Brief Introduction Paragraph */
+.brief {
+  @apply leading-[24px] mt-[1rem] text-theme-gray  min-w-full lg:max-w-[33rem];
+}
+
+/* "data" special */
+.data {
+  @apply text-theme-orange px-[2.5px] py-[1px] cursor-pointer;
+  border-bottom: 2px dotted;
+}
+
+/* "analytics" special */
+.analytics {
+  @apply text-theme-orange px-[3px] py-[2px] cursor-pointer;
+  border-bottom: 2px dotted;
+}
+
+/* @@Subsections Wrapper (About, Experience, Skills, and Contact Page)  */
+.sectionswrapper {
+  @apply min-h-screen w-full col-span-12 mx-auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* @About-page section */
+.aboutwrapper {
+  grid-column: 1/13;
+  @apply mb-16 scroll-mt-4 px-[20px] lg:px-0;
+}
+
+/* @About-page Header */
+.aboutheader {
+  @apply w-full z-30 sticky top-0 lg:hidden backdrop-blur-[8px] bg-[#152342] py-7 mb-4 leading-[0.1em] uppercase font-[600] text-[1.25] tracking-[.1rem];
+}
+
+/* @About-Page Contents */
+.aboutcontents {
+  @apply bg-transparent min-w-full;
+}
+
+/* @Experience-page section */
+.experiencewrapper {
+  grid-column: 1/13;
+  @apply mb-16 scroll-mt-4 px-[20px] lg:px-0;
+}
+
+/* @Experience page header */
+.experienceheader {
+  @apply w-full z-30 sticky top-0 lg:hidden backdrop-blur-[8px] bg-[#152342] py-7 mb-4 leading-[0.1em] uppercase font-[600] text-[1.25] tracking-[.1rem];
+}
+
+/* @Skills-page section */
+.skillwrapper {
+  grid-column: 1/13;
+  @apply mb-16 scroll-mt-4 px-[20px] lg:px-0;
+}
+
+/* @Skills-Page Header */
+.skillheader {
+  @apply w-full z-30 sticky top-0 lg:hidden backdrop-blur-[8px] bg-[#152342] py-7 mb-4 leading-[0.1em] uppercase font-[600] text-[1.25] tracking-[.1rem];
+}
+
+/*  @Skill-Page Contents */
+.skillcontents {
+  @apply w-full gap-5 flex flex-col items-center;
+}
+
+.skill {
+  @apply text-[1.7rem] lg:text-[1.9rem] md:text-[1.8rem] font-[600]  gap-3 flex items-center;
+}
+
+/* @Contact-page section */
+.contactwrapper {
+  grid-column: 1/13;
+  @apply scroll-mt-4 px-[20px] lg:px-0;
+}
+
+/* @Contact-Page Contents */
+.contactcontents {
+  @apply w-full;
+}
+
+/* @Footer-page section */
+.footerwrapper {
+  grid-column: 1/13;
+  @apply scroll-mt-4 px-[20px] lg:px-0;
+}
+
+/* @Footer Contents */
+.footercontents {
+  @apply w-full;
+}
+
+/* Media Querries and Screen */
+@media (min-width: 1024px) {
+  /* Main Wrapper Media Queries */
+  .mainwrapper {
+    @apply max-w-[1240px] mx-auto  min-h-screen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Navigation Wrapper Media Queries */
+  .navigationwrapper {
+    position: sticky;
+    top: 0;
+    @apply max-h-screen min-h-screen;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 84px 10fr 84px;
+  }
+  .navigationbar {
+    grid-row: 2 / span 1;
+  }
+  .sociallinks {
+    position: absolute;
+    bottom: 84px;
+    left: 60.05px;
+  }
+
+  /* Sections Wrapper Media Queries */
+  .sectionswrapper {
+    @apply min-h-screen col-span-12 mx-auto my-[84px];
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

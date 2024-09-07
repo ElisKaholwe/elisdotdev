@@ -1,0 +1,32 @@
+.nav {
+  @apply mt-7;
+}
+/* @Active Navigation Link */
+.active {
+  @apply font-[inter] font-[500] text-theme-white flex items-center gap-2 transition duration-[40ms] delay-[20ms];
+}
+.active::before {
+  content: '';
+  width: 60px;
+  height: 1.5px;
+  @apply bg-theme-white transition duration-[40ms] delay-[20ms];
+}
+/* @Inactive Navigation Link */
+.inactive {
+  @apply font-[inter] font-[500]  flex items-center gap-2 text-theme-black-gray;
+}
+.inactive:hover {
+  @apply font-[inter] font-[500]  flex items-center gap-2 text-theme-white;
+}
+.inactive::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  @apply bg-theme-black-gray;
+}
+.inactive:hover::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  @apply bg-theme-white;
+}

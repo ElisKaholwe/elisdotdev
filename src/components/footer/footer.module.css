@@ -1,0 +1,15 @@
+.special {
+  @apply text-[15px] text-theme-orange font-[600];
+}
+.special {
+  @apply text-[15px] text-[#fff];
+}
+.specialII {
+  @apply text-[15px] text-theme-white;
+}
+.paragraph {
+  @apply mb-[1rem] text-[15px]  leading-relaxed text-theme-off-white;
+}
+.paragraph::selection {
+  @apply bg-bg-theme-black;
+}
