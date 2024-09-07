@@ -20,13 +20,13 @@ import NavigationSection from '../components/nav/nav';
 const HomePage = () => {
   /* Environmental Variables */
   const Github = 'https://github.com/ElisKaholwe';
+  const googleCloud = 'https://github.com/ElisKaholwe';
   const Instagram = 'https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1';
   const Reddit = 'https://www.reddit.com/user/elisdotenv/';
   const Whatsapp = 'https://wa.me/255760659831?';
   const LinkedIn = 'https://www.linkedin.com/in/elis-noman-9b64b9289/';
   const Stackoverflow = 'https://stackoverflow.com/users/22610239/elis-kaholwe';
   const blogPost = 'https://medium.com/@jayesh-totla/data-driven-decision-making-analytics-in-software-development-5a3ce639649c';
-  const googleCloud = 'https://drive.google.com/file/d/1uSsd04DS-3PzuU_b40PpisU6Hw3mbE6o/view?usp=drive_link';
   return (
     <>
       <div className={`bg-white fixed z-50 rotate-90 top-1/2 right-0`}>
