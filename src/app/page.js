@@ -26,8 +26,7 @@ const HomePage = () => {
   const LinkedIn = 'https://www.linkedin.com/in/elis-noman-9b64b9289/';
   const Stackoverflow = 'https://stackoverflow.com/users/22610239/elis-kaholwe';
   const blogPost = 'https://medium.com/@jayesh-totla/data-driven-decision-making-analytics-in-software-development-5a3ce639649c';
-  const googleCloud = `https://github.com/ElisKaholwe`;
-
+  const googleCloud = 'https://drive.google.com/file/d/1uSsd04DS-3PzuU_b40PpisU6Hw3mbE6o/view?usp=drive_link';
   return (
     <>
       <div className={`bg-white fixed z-50 rotate-90 top-1/2 right-0`}>
